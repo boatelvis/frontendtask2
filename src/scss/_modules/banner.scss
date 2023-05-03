@@ -1,0 +1,11 @@
+.m-banner {
+	--nav-height: 82px;
+	&__main {
+		background-image: url('images/hero.webp');
+		background-size: cover;
+		background-repeat: no-repeat;
+
+		height: calc(90vh - var(--nav-height));
+		// width: 100vw;
+	}
+}

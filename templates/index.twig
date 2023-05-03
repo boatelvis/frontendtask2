@@ -1,0 +1,39 @@
+{% extends 'layouts/base.twig' %}
+{% set siteLogo = 'images/logo.png' %}
+{% set navItems = [
+	{
+		slug: '/',
+		label: 'Insights'
+	},
+	{
+		slug: 'blog',
+		label: 'Blog'
+	},
+	{
+		slug: 'about',
+		label: 'About'
+	},
+	{
+		slug: 'join',
+		label: 'Join'
+	}
+] %}
+
+{% set bannerData = [
+	{
+		title: 'Our Capability Areas',
+		sub_title: 'Industry-leading solutions to help organizations accelerate value creating in a radically evolving business landscape'
+	}
+] %}
+
+{% block header %}
+	{% include 'modules/banner/banner.twig' %}
+{% endblock %}
+
+{% block content %}
+	{% include 'modules/info.twig' %}
+	{% include 'modules/card.twig' %}
+{% endblock %}
+{% block footer %}
+	{% include 'modules/footer.twig' %}
+{% endblock %}

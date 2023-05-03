@@ -1,0 +1,17 @@
+<div class="m-banner">
+	<div class="m-banner__main">
+		{% include '../../layouts/headers/_header.twig' %}
+		{% for item in bannerData %}
+			<div class="m-banner__content-wrap container text-center">
+				<div class="m-banner__content text-white">
+					<h1 class="display-3 fw-bold">
+						{{ item.title }}
+					</h1>
+					<p class="lead">
+						{{ item.sub_title }}
+					</p>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</div>

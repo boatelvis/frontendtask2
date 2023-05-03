@@ -1,0 +1,21 @@
+<header class="site-header">
+	<div class="site-header__main container">
+		<div class="site-header__row py-3 d-flex align-items-center justify-content-between">
+			<div class="site-header__col -left">
+				<a href="" class="site-header__logo d-block"><img src="{{ siteLogo }}" alt="infosysconsulting" /></a>
+			</div>
+			<div class="site-header__col -center d-none d-lg-block">
+				<div class="nav_main__wrap">
+					{% include '_navigation.twig' %}
+				</div>
+			</div>
+			<div class="site-header__col d-lg-none -right">
+				<div class="menu-hamburger d-block">
+					<div class="c-menu-hamburger d-flex align-items-center js-menu-hamburger">
+						<div class="c-menu-hamburger__inner"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
